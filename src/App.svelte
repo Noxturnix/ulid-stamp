@@ -27,13 +27,12 @@
 		url
 
 	let shareStamp = getLocalStorageBoolean('shareStamp', true)
-	let shortenSnowflake = getLocalStorageBoolean('shortenSnowflake', true)
 	let darkMode = getLocalStorageBoolean('darkMode', true)
 
 	let locale, tz
 
 	$: updateSnowflake(snowflake)
-	$: dynamicMode && updateShareOptions(shareStamp, shortenSnowflake)
+	$: dynamicMode && updateShareOptions(shareStamp)
 
 	$: {
 		if (darkMode) window.document.body.classList.add('dark-mode')
@@ -57,7 +56,6 @@
 	// Update share options
 	function updateShareOptions() {
 		localStorage.setItem('shareStamp', shareStamp)
-		localStorage.setItem('shortenSnowflake', shortenSnowflake)
 		updateURL()
 	}
 
@@ -71,11 +69,7 @@
 				if (tz === undefined) tz = detectTimeZone()
 				query.z = tz
 			}
-			if (shortenSnowflake) {
-				query.f = snowflake
-			} else {
-				query.s = snowflake
-			}
+			query.s = snowflake
 		}
 		window.history.replaceState(null, null, qs.stringify(query, '?'))
 		url = window.location.href
@@ -120,13 +114,7 @@
 
 	{#if timestamp}
 		<Output {timestamp} {darkMode} />
-		<Share
-			bind:url
-			bind:shareStamp
-			bind:shortenSnowflake
-			{timestamp}
-			{dynamicMode}
-		/>
+		<Share bind:url bind:shareStamp {timestamp} {dynamicMode} />
 	{/if}
 	{#if error}
 		<p style="margin-top: 0.2em;">❌ {error}</p>

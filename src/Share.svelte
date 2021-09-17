@@ -8,7 +8,6 @@
 
 	export let url
 	export let shareStamp
-	export let shortenSnowflake
 	export let timestamp
 	export let dynamicMode
 
@@ -45,7 +44,6 @@
 				bind:checked={shareStamp}
 			/>
 		{/if}
-		<Checkbox text="Shorten snowflake in URL" bind:checked={shortenSnowflake} />
 	</div>
 	<input
 		type="text"
