@@ -4,7 +4,7 @@ I couldn't find a page anywhere that let you paste in a ~~Discord snowflake~~ Re
 
 So I ~~made~~ forked [snow-stamp](https://github.com/vegeta897/snow-stamp) and hosted a new one.
 
-🔗 https://ulid-stamp.vercel.app/
+🔗 https://noxturnix.github.io/ulid-stamp/
 
 👩‍💻 If you're a developer looking for the conversion code, check out [convert.js](src/convert.js)
 
