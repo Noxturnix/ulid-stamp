@@ -1,21 +1,14 @@
-import {
-	convertSnowflakeToDate,
-	DISCORD_EPOCH,
-	validateSnowflake,
-} from './convert'
+import { convertSnowflakeToDate, validateSnowflake } from './convert'
 
-const snowflake = '86913608335773696'
-const defaultUnix = 1440792219004
+const snowflake = '01FFJ72Z95CGKHGMHD13AWAPNT'
+const defaultUnix = 1631625248037
 
 test('converts snowflake to correct date', () => {
 	expect(convertSnowflakeToDate(snowflake).getTime()).toBe(defaultUnix)
 })
 
 test('converts snowflake to correct date with custom epoch', () => {
-	const epoch = 1000
-	expect(convertSnowflakeToDate(snowflake, epoch).getTime()).toBe(
-		defaultUnix - DISCORD_EPOCH + epoch
-	)
+	expect(convertSnowflakeToDate(snowflake).getTime()).toBe(defaultUnix)
 })
 
 test('returns date for valid snowflake', () => {
