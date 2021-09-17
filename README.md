@@ -1,19 +1,16 @@
-# ❄️ Snow-Stamp
+# 🆔 Ulid-Stamp
 
-I couldn't find a page anywhere that let you paste in a Discord snowflake to get the timestamp.
+I couldn't find a page anywhere that let you paste in a ~~Discord snowflake~~ Revolt ID to get the timestamp.
 
-So I made one.
+So I ~~made~~ forked [snow-stamp](https://github.com/vegeta897/snow-stamp) and hosted a new one.
 
-🔗 https://y.at/❄️⚙️⏰👏
+🔗 https://ulid-stamp.vercel.app/
 
 👩‍💻 If you're a developer looking for the conversion code, check out [convert.js](src/convert.js)
 
 ## Contribute
 
 Pull requests and issues are welcome!
-
-- Add me on Discord `vegeta897#7777`
-- [Buy me a coffee](https://www.buymeacoffee.com/vegeta897)
 
 ## Develop
 
@@ -37,10 +34,6 @@ Otherwise, start the server:
 
 The server runs on port 3000 by default, but you can set `PORT` in your environment variables. You can create a `.env` file in root to set this variable.
 
-### Custom Epoch
+## Original Project
 
-You can use a custom epoch instead of [Discord's](https://discord.com/developers/docs/reference#snowflakes) by setting environment variable `SNOWFLAKE_EPOCH` to the desired integer or with an `.env` file.
-
----
-
-[![MadeWithSvelte.com shield](https://madewithsvelte.com/storage/repo-shields/3155-shield.svg)](https://madewithsvelte.com/p/snow-stamp/shield-link)
+This project is a fork of [snow-stamp](https://github.com/vegeta897/snow-stamp) by [vegeta897](https://github.com/vegeta897) which is released under [MIT License](https://github.com/vegeta897/snow-stamp/blob/main/LICENSE)

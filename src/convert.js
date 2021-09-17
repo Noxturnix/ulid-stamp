@@ -1,6 +1,6 @@
 /*
- * This file contains implemented codes which are referenced
- * from ulid/javascript by Alizain Feerasta.
+ * This file contains implemented codes of
+ * ulid/javascript by Alizain Feerasta.
  *
  * ulid/javascript is released under MIT License
  * https://github.com/ulid/javascript/blob/master/LICENSE
