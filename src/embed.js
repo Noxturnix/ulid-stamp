@@ -1,5 +1,5 @@
 import { validateSnowflake } from './convert.js'
-import { decodeSnowflake, TZ_NAMES } from './util.js'
+import { TZ_NAMES } from './util.js'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc.js'
 import timezone from 'dayjs/plugin/timezone.js'
@@ -32,11 +32,11 @@ export function getEmbedTitle({ l, z, s, f }) {
 	let embedDate
 	if (s) {
 		try {
-			embedDate = validateSnowflake(s, epoch)
+			embedDate = validateSnowflake(s)
 		} catch (e) {}
 	} else if (f) {
 		try {
-			embedDate = validateSnowflake(decodeSnowflake(f, epoch))
+			embedDate = validateSnowflake(f)
 		} catch (e) {}
 	}
 	if (!embedDate) return false

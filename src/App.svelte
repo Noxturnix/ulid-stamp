@@ -6,8 +6,6 @@
 		getLocalStorageBoolean,
 		detectLocale,
 		detectTimeZone,
-		encodeSnowflake,
-		decodeSnowflake,
 	} from './util.js'
 	import Help from './Help.svelte'
 	import Output from './Output.svelte'
@@ -23,7 +21,7 @@
 	const EPOCH = +SNOWFLAKE_EPOCH || undefined
 
 	const queries = qs.parse(location.search)
-	let snowflake = queries.s || (queries.f && decodeSnowflake(queries.f)) || '',
+	let snowflake = queries.s || queries.f || '',
 		timestamp,
 		error,
 		url
@@ -74,7 +72,7 @@
 				query.z = tz
 			}
 			if (shortenSnowflake) {
-				query.f = encodeSnowflake(snowflake)
+				query.f = snowflake
 			} else {
 				query.s = snowflake
 			}

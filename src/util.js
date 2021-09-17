@@ -27,22 +27,6 @@ export function detectTimeZone() {
 	return tzIndex.toString(36)
 }
 
-export function encodeSnowflake(snowflake) {
-	// Split snowflake into 15-digit chunks (max safe int = 999,999,999,999,999)
-	const chunks = []
-	const chunkCount = Math.ceil(snowflake.length / 15)
-	for (let i = 0; i < chunkCount; i++) {
-		chunks.push(snowflake.substring(0, 15))
-		snowflake = snowflake.substring(15)
-	}
-	return chunks.map((chunk) => parseInt('1' + chunk).toString(36)).join('-')
-}
-
-export function decodeSnowflake(encodedSnowflake) {
-	const chunks = encodedSnowflake.split('-')
-	return chunks.map((chunk) => parseInt(chunk, 36).toString().slice(1)).join('')
-}
-
 // https://svelte.dev/repl/b4db6313dfeb4b50871a9b43398a6952?version=3.16.7
 /** Selects the text inside a text node when the node is focused */
 export function selectTextOnFocus(node) {
