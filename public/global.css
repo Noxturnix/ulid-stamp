@@ -19,18 +19,18 @@ body.dark-mode {
 }
 
 a {
-	color: #007584;
+	color: #ff4654;
 }
 
 body.dark-mode a {
-	color: #69eaff;
+	color: #ff4654;
 }
 
 ::selection {
-	background: #69eaff;
+	background: #ff4654;
 }
 ::-moz-selection {
-	background: #69eaff;
+	background: #ff4654;
 }
 
 body.dark-mode ::selection {
@@ -75,11 +75,11 @@ body.dark-mode input::placeholder {
 }
 
 input:focus {
-	outline: 2px solid #007584;
+	outline: 2px solid #ff4654;
 }
 
 body.dark-mode input:focus {
-	outline: 2px solid #69eaff;
+	outline: 2px solid #ff4654;
 }
 
 input:disabled {

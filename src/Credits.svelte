@@ -5,29 +5,18 @@
 
 <div class="credits">
 	<p>
-		<span>Questions or comments?</span>
-		<span
-			>Add me<img
-				height="30px"
-				src={discord}
-				alt="Discord"
-				style="position: relative; top: 11px; margin-top: -11px;"
-			/><code>vegeta897#7777</code></span
-		>
-	</p>
-	<p>
-		<span>If you want to support my projects,</span>
-		<span
-			><a href="https://www.buymeacoffee.com/vegeta897" target="_blank"
-				>buy me a coffee!<span style="text-decoration: none">&nbsp;💙</span></a
-			></span
-		>
-	</p>
-	<p>
-		<a class="github" href="https://github.com/vegeta897/snow-stamp"
+		<a class="github" href="https://github.com/Noxturnix/ulid-stamp"
 			><img height="24px" src={github} alt="GitHub" style="" /><span
 				style="text-decoration: none">&nbsp;</span
 			>GitHub</a
+		>
+	</p>
+	<p>
+		<span>Original project;</span>
+		<span
+			><a href="https://github.com/vegeta897/snow-stamp" target="_blank"
+				>snow-stamp</a
+			></span
 		>
 	</p>
 </div>

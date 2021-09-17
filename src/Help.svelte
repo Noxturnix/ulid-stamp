@@ -1,20 +1,14 @@
 <details>
-	<summary>What is a snowflake?</summary>
+	<summary>What is a Revolt ID?</summary>
 	<p>
-		A Snowflake is essentially a unique ID for a resource which contains a
+		A Revolt ID is essentially a unique ID for a resource which contains a
 		timestamp.
 	</p>
 	<p>
-		You can copy the snowflake from a message, user, channel, etc by right
-		clicking on them in Discord.
+		You can copy the ID from a message, user, channel, etc by right clicking on
+		them in Revolt.
 	</p>
-	<p>This will let you check the age of a Discord account or server.</p>
-	<p>
-		You must have Developer Mode enabled, which is found in <strong
-			>User Settings</strong
-		>
-		> <strong>Advanced</strong>
-	</p>
+	<p>This will let you check the age of a Revolt account or server.</p>
 </details>
 
 <style>

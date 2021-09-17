@@ -87,7 +87,7 @@
 
 	section time {
 		font-size: 1.8em;
-		color: #69eaff;
+		color: #ff4654;
 		line-height: 1;
 	}
 

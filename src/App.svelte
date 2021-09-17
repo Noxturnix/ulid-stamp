@@ -78,8 +78,8 @@
 
 <main>
 	<hgroup>
-		<h2>❄️</h2>
-		<h1>Discord Snowflake to Timestamp Converter</h1>
+		<h2>🆔</h2>
+		<h1>Revolt ID to Timestamp Converter</h1>
 	</hgroup>
 	<div id="dark-toggle">
 		<div style="display:inline-block;position:relative; top:13px; right:2px;">
@@ -95,20 +95,18 @@
 			bgColorEnabled="#444"
 		/>
 	</div>
-	<p style="margin-bottom: 0.5em;">
-		Paste in a Discord snowflake to get the timestamp
-	</p>
+	<p style="margin-bottom: 0.5em;">Paste in a Revolt ID to get the timestamp</p>
 	<Help />
 	<div
 		style="position: relative; display: inline-flex; margin-bottom: 2em; width: 100%;"
 	>
-		<div class="input-icon">❄</div>
+		<div class="input-icon">🆔</div>
 		<input
 			type="text"
 			bind:value={snowflake}
 			use:selectTextOnFocus
 			use:blurOnEscape
-			placeholder="e.g. 86913608335773696"
+			placeholder="e.g. 01FFJ72Z95CGKHGMHD13AWAPNT"
 		/>
 	</div>
 
@@ -138,12 +136,12 @@
 	}
 
 	h1 {
-		color: #008dad;
+		color: #ff4654;
 		font-size: 2em;
 	}
 
 	:global(body.dark-mode) h1 {
-		color: #69eaff;
+		color: #ff4654;
 	}
 
 	#dark-toggle {

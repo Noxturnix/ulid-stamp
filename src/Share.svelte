@@ -40,7 +40,7 @@
 	<div class="options">
 		{#if dynamicMode}
 			<Checkbox
-				text="Show timestamp on Discord/Twitter"
+				text="Show timestamp on Revolt/Discord/Twitter"
 				bind:checked={shareStamp}
 			/>
 		{/if}
@@ -53,17 +53,6 @@
 		use:blurOnEscape
 		value={url}
 	/><button on:click={copyURL}>{urlCopyText}</button>
-	<label>
-		<span>Discord timestamp code</span>
-		<input
-			type="text"
-			id="share-timestamp"
-			readonly
-			use:selectTextOnFocus
-			use:blurOnEscape
-			value={`<t:${getUNIX(timestamp)}>`}
-		/><button on:click={copyTimestamp}>{timestampCopyText}</button>
-	</label>
 </fieldset>
 
 <style>
