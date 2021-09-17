@@ -20,7 +20,7 @@ Pull requests and issues are welcome!
 
 ## Deploy
 
-You can deploy a static site or run the included server. The benefit of using the server is that links containing snowflakes will show the timestamp in embeds when posted on services like Discord.
+You can deploy a static site or run the included server. The benefit of using the server is that links containing ~~snowflakes~~ Revolt IDs will show the timestamp in embeds when posted on services like ~~Discord~~ Revolt.
 
 For either deployment, you must first build:
 
