@@ -12,7 +12,7 @@
 		>
 	</p>
 	<p>
-		<span>Original project;</span>
+		<span>Original project:</span>
 		<span
 			><a href="https://github.com/vegeta897/snow-stamp" target="_blank"
 				>snow-stamp</a
